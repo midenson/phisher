@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const FooterMobile = () => {
   return (
-    <div className='h-screen w-1/3 bg-amber-100 ml-10 flex justify-center items-center'>
+    <div className='h-screen w-full bg-amber-100 ml-10 flex justify-center items-center'>
         <div className='w-11/12 h-full flex flex-col items-center gap-2'>
             <div className='w-full flex flex-col justify-evenly items-center mt-5'>
                 <div className='flex items-center gap-3'>
