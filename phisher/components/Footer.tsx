@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
+import { Button } from './ui/button'
 
 const Footer = () => {
   return (
@@ -42,8 +43,21 @@ const Footer = () => {
                     <Link href={'./'}>Partner With Us</Link>
                 </div>
             </div>
-            <div className='w-full h-24 bg-green-600'></div>
-            <div className='w-full h-14 bg-green-600'></div>
+            <div className='w-full h-24 bg-green-600 flex flex-col justify-center items-center gap-5'>
+              <Button className='gap-2 h-11' variant={'outline'}><Image src={'./wheelchair.svg'} alt='wheelchair' width={20} height={20}/>Enable Accesibility Options </Button>
+              <div className='flex justify-between items-center gap-3 text-sm'>
+                <p>© 2024 Sincere Corporation</p>
+                <Link href={'./'}>Terms of use</Link>
+                <Link href={'./'}>Privacy Policy</Link>
+                <Link href={'./'}>Do Not Sell My Info</Link>
+                <Link href={'./'}>CA Privacy Notice</Link>
+              </div>
+            </div>
+            <div className='w-full flex justify-between items-center gap-4 flex-col'>
+              <p className='text-[10px]'>PUNCHBOWL® is a registered trademark of Sincere Corporation. All rights reserved. All other product and company names are trademarks or registered trademarks of their respective holders.</p>
+              <p className='text-[10px]'>*Amazon.com Gift Cards ("GCs") sold by Sincere Corporation, an authorized and independent reseller of Amazon.com Gift Cards. Except as required by law, GCs cannot be transferred for value or redeemed for cash. GCs may be used only for purchases of eligible goods on Amazon.com or certain of its affiliated websites. For complete terms and conditions, see http://www.amazon.com/gc-legal. GCs are issued by ACI Gift Cards, Inc., a Washington corporation. ©, ®, ™ Amazon.com Inc. and/or its affiliates, 2024.</p>
+              <div className='border-t h-10'>A RAPTIVE PARTNER SITE</div>
+            </div>
         </div>
     </div>
   )
