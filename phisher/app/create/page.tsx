@@ -1,6 +1,7 @@
 import ButtonIcon from '@/components/ButtonIcon'
 import CreateForm from '@/components/CreateForm'
 import Footer from '@/components/Footer'
+import FooterMobile from '@/components/FooterMobile'
 import Navbar from '@/components/Navbar'
 import Signingoogle from '@/components/Signingoogle'
 import Link from 'next/link'
@@ -11,7 +12,7 @@ const page = () => {
     <div className='w-screen'>
         <Navbar />
           <div className='mt-10 flex justify-center items-center'>
-            <div className='flex items-center flex-col border border-opacity-65 rounded-sm w-1/3 h-[450px]'>
+            <div className='flex items-center flex-col border border-opacity-65 rounded-sm w-[400px] h-[450px]'>
                 <div className='flex flex-col justify-center items-center gap-3 w-10/12 h-1/3'>
                     <p className='text-[30px] text-gray-600'>Create Your Account</p>
                     <ButtonIcon />
@@ -29,7 +30,7 @@ const page = () => {
         <div className='flex justify-center items-center mt-5'>
             <Link href={'./'} className='text-blue'>Have an account? Sign in</Link>
         </div>
-        <Footer />
+        <FooterMobile />
     </div>
   )
 }
