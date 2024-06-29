@@ -8,7 +8,7 @@ import Link from 'next/link'
 import React from 'react'
 import NavMobile from '../../components/NavMobile'
 
-const page = () => {
+const signin = () => {
   return (
     <div className='w-screen'>
         <NavMobile />
@@ -36,4 +36,4 @@ const page = () => {
   )
 }
 
-export default page
+export default signin
