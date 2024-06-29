@@ -5,10 +5,10 @@ import Link from 'next/link'
 
 const FooterMobile = () => {
   return (
-    <div className='h-screen w-full bg-amber-100 ml-10 flex justify-center items-center'>
+    <div className='h-[600px] w-screen bg-amber-100 mt-5 flex justify-center items-center'>
         <div className='w-11/12 h-full flex flex-col items-center gap-2'>
-            <div className='w-full flex flex-col justify-evenly items-center mt-5'>
-                <div className='flex items-center gap-3'>
+            <div className='w-full flex flex-col justify-evenly items-center'>
+                <div className='flex items-center gap-3 mt-6'>
                     <Image src={'./instagram.svg'} alt='instagram' width={40} height={40} />
                     <Image src={'./pinterest.svg'} alt='pinterest' width={40} height={40} />
                     <Image src={'./facebook.svg'} alt='facemash' width={40} height={40} />
@@ -18,7 +18,7 @@ const FooterMobile = () => {
                     <Image src={'./appstore.svg'} alt='appstore' width={120} height={75} />
                     <Image src={'./googleplay.svg'} alt='playstore' width={120} height={75} />
                 </div>
-                <div className='w-full border-b mb-2 '></div>
+                <div className='w-full border-b mb-2 border-black '></div>
             </div>
             <div className='w-full flex flex-col gap-2 items-center'>
                 <Button className='bg-amber-100 gap-2 h-11 mb-3 hover:bg-amber-300' variant={'outline'}><Image src={'./wheelchair.svg'} alt='wheelchair' width={20} height={20}/>Enable Accesibility Options </Button>

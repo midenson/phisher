@@ -19,17 +19,17 @@ const Footer = () => {
                 <Image src={'./twitter.svg'} alt='twitter' width={40} height={40} />
               </div>
             </div>
-            <div className='border-b border-opacity-55 w-full h-48 flex justify-between items-center gap-2'>
+            <div className='border-b border-black border-opacity-55 w-full h-48 flex justify-between items-center gap-2'>
                 <div className='w-1/3 h-full flex flex-col justify-start gap-3'>
                   <div className='text-xl font-semibold text-gray-600'>About Us</div>
-                    <div className='w-full border-b'></div>
+                    <div className='w-full border-b border-black'></div>
                     <Link href={'./'} className='text-[14px] text-gray-700'>Company overview</Link>
                     <Link href={'./'} className='text-[14px] text-gray-700'>News</Link>
                     <Link href={'./'} className='text-[14px] text-gray-700'>Partner With Us</Link>
                 </div>
                 <div className='w-1/3 h-full flex flex-col justify-start gap-3'>
                 <div className='text-xl font-semibold text-gray-600'>More</div>
-                    <div className='w-full border-b'></div>
+                    <div className='w-full border-b border-black'></div>
                     <Link href={'./'} className='text-[14px] text-gray-700'>Find a Vendor</Link>
                     <Link href={'./'} className='text-[14px] text-gray-700'>Party Ideas</Link>
                     <Link href={'./'} className='text-[14px] text-gray-700'>Reasons to Celebrate</Link>
@@ -37,7 +37,7 @@ const Footer = () => {
                 </div>
                 <div className='w-1/3 h-full flex flex-col justify-start gap-3'>
                 <div className='text-xl font-semibold text-gray-600'>Get In Touch</div>
-                    <div className='w-full border-b'></div>
+                    <div className='w-full border-b border-black'></div>
                     <Link className='text-[14px] text-gray-700' href={'./'}>Get Help</Link>
                     <Link className='text-[14px] text-gray-700' href={'./'}>Job Opportunities</Link>
                     <Link className='text-[14px] text-gray-700' href={'./'}>Accessibility</Link>
