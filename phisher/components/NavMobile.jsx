@@ -18,7 +18,7 @@ const NavMobile = () => {
                     <Button variant={'outline'} className='border border-opacity-55 rounded-none'>Categories</Button>
                 </div>
                 <div className='flex justify-between items-center'>
-                    <Image src={'./apple.svg'} alt='logo' width={30} height={30} />
+                    <Image src={'./logo.svg'} alt='logo' width={30} height={30} />
                 </div>
                 <div className='flex justify-between items-center gap-2'>
                     <Image src={'./search.svg'} alt='search' width={20} height={20} />
@@ -27,7 +27,6 @@ const NavMobile = () => {
                     </div>
                 </div>
             </div>
-            <div className={`${open ? 'w-[100px] h-[100px] top-0 modal absolute' : 'hidden opacity-0'}`}>i am here</div>
     </div>
   )
 }

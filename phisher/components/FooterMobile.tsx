@@ -21,12 +21,12 @@ const FooterMobile = () => {
                 <div className='w-full border-b mb-2 '></div>
             </div>
             <div className='w-full flex flex-col gap-2 items-center'>
-                <Button className='gap-2 h-11 mb-3 hover:bg-amber-300' variant={'outline'}><Image src={'./wheelchair.svg'} alt='wheelchair' width={20} height={20}/>Enable Accesibility Options </Button>
+                <Button className='bg-amber-100 gap-2 h-11 mb-3 hover:bg-amber-300' variant={'outline'}><Image src={'./wheelchair.svg'} alt='wheelchair' width={20} height={20}/>Enable Accesibility Options </Button>
                 <Button className='gap-2 h-11 bg-amber-100 hover:bg-amber-300 w-full' variant={'outline'}>Back To Top<Image src={'./top.svg'} alt='wheelchair' width={20} height={20}/></Button>
                 <Button variant={'outline'} className='w-full bg-amber-100 hover:bg-amber-300'>Get Help</Button>
             </div>
             <div className='flex justify-center items-center flex-col'>
-                <div><p>© 2024 Sincere Corporation</p></div>
+                <div><p className='text-[13px]'>© 2024 Sincere Corporation</p></div>
                 <div className='flex justify-between items-center gap-2'>
                 <Link className='text-[11px]' href={'./'}>Terms of use</Link>
                 <Link className='text-[11px]' href={'./'}>Privacy Policy</Link>

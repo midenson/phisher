@@ -3,11 +3,13 @@ import Navbar from '@/components/Navbar'
 import React from 'react'
 import Signingoogle from '@/components/Signingoogle'
 import Footer from '@/components/Footer'
+import FooterMobile from '@/components/FooterMobile'
+import NavMobile from '@/components/NavMobile'
 
 const Signin = () => {
   return (
     <div className='w-screen'>
-      <Navbar />
+      <NavMobile />
       <div className='flex justify-center items-center'>
         <div className='mt-10 flex items-center flex-col border border-opacity-65 rounded-sm w-[400px] h-[600px]'>
           <div className='w-10/12'>
@@ -26,7 +28,7 @@ const Signin = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <FooterMobile />
     </div>
   )
 }
