@@ -3,18 +3,22 @@ import Navbar from '@/components/Navbar'
 import React from 'react'
 import Signingoogle from '@/components/Signingoogle'
 import Footer from '@/components/Footer'
+import SignInForm from '@/components/SignInForm'
 
 const Signin = () => {
   return (
     <div className='w-screen'>
       <Navbar />
       <div className='flex justify-center items-center'>
-        <div className='mt-10 flex items-center flex-col border border-opacity-65 rounded-sm w-[400px] h-[600px]'>
+        <div className='mt-10 flex items-center flex-col border border-opacity-65 rounded-sm w-[400px] h-[900px]'>
           <div className='w-10/12'>
           <div className='flex justify-center items-center mt-3'>
           <p className='text-[30px] text-gray-600'>Sign in</p>
           </div>
-          <LoginForm />
+          <SignInForm />
+          <div className='w-11/12 flex justify-center items-center ml-2 mt-2'>
+            <p className='text-[11px] text-gray-600'>By signing up, you agree to Punchbowl’s Terms of Use and Privacy Policy. At sign up, you agree to receive occasional emails from Punchbowl. You can unsubscribe at any time.</p>
+          </div>
           </div>
           <div className=' bg-gray-300 w-full h-10 flex justify-center items-center mt-3 border-t border-b'>OR</div>
           <div className='w-10/12 h-10/12 flex justify-center items-center'>
