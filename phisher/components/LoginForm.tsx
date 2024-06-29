@@ -24,7 +24,7 @@ const LoginForm = () => {
             required
             />
             <SubmitButton
-            className="bg-green-600 rounded-md px-6 py-4 text-white mb-2"
+            className="bg-green-600 rounded-md px-4 py-3 text-white text-lg mb-2"
             pendingText="Signing In..."
             >
             Sign In

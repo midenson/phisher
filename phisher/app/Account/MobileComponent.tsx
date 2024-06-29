@@ -4,10 +4,11 @@ import React from 'react'
 import Signingoogle from '@/components/Signingoogle'
 import Footer from '@/components/Footer'
 import SignInForm from '@/components/SignInForm'
-import FooterMobile from '@/components/FooterMobile'
+import Link from 'next/link'
 import NavMobile from '@/components/NavMobile'
+import FooterMobile from '@/components/FooterMobile'
 
-const Signin = () => {
+const MobileComponent = () => {
   return (
     <div className='w-screen'>
       <NavMobile />
@@ -26,15 +27,18 @@ const Signin = () => {
           <div className='w-10/12 h-10/12 flex justify-center items-center'>
             <div className='flex flex-col justify-between gap-3 w-full mt-5'>
               <Signingoogle btnText={'Sign in with google'} icon={'google'} />
-              <Signingoogle btnText={'Sign in with facebook'} icon={'facebook'} />
+              <Signingoogle btnText={'Sign in with facebook'} icon={'meta'} />
               <Signingoogle btnText={'Sign in with Apple'} icon={'apple'} />
             </div>
           </div>
         </div>
       </div>
+      <div className='flex justify-center items-center mt-5'>
+          <Link href={'./signin'} className='text-blue-500'>Have an account? Sign in</Link>
+        </div>
       <FooterMobile />
     </div>
   )
 }
 
-export default Signin
+export default MobileComponent

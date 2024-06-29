@@ -15,7 +15,7 @@ const Footer = () => {
               <div className='flex justify-between items-center gap-2'>
                 <Image src={'./instagram.svg'} alt='instagram' width={40} height={40} />
                 <Image src={'./pinterest.svg'} alt='pinterest' width={40} height={40} />
-                <Image src={'./facebook.svg'} alt='facebook' width={40} height={40} />
+                <Image src={'./facemash.svg'} alt='facebook' width={40} height={40} />
                 <Image src={'./twitter.svg'} alt='twitter' width={40} height={40} />
               </div>
             </div>
