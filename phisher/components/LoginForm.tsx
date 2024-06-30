@@ -1,7 +1,7 @@
 import React from 'react'
 import { SubmitButton } from '@/app/login/submit-button'
 import { SupabaseClient, createClient } from '@supabase/supabase-js'
-import { redirect } from 'next/navigation';
+import { redirect, useRouter } from 'next/navigation';
 
 
 const LoginForm = () => {
@@ -13,18 +13,19 @@ const LoginForm = () => {
   )
 
 const signin = async () => {
+
   const { error } = await supabase.auth.signInWithPassword({
     email: 'olatunjinaheem012@email.com',
-    password: 'password'
+    password: 'password',
   });
-  if (!error) {
-    redirect('./protected');
+  if(!error) {
+    redirect('./protected')
   }
 }
 
 
   return (
-    <form className="flex flex-col w-full justify-center">
+    <form className="flex flex-col w-full justify-center" onSubmit={signin}>
             <label className="text-sm" htmlFor="email">
             <p className='text-sm'>Email</p>
             </label>
