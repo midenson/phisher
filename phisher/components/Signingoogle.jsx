@@ -31,7 +31,7 @@ const Signingoogle = ({ btnText, icon }) => {
     );
   
     const { error } = await supabase.auth.signInWithOAuth({
-      provider: 'apple'
+      provider: 'google'
     });
     if (!error) {
       redirect('./')
