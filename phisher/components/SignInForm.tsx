@@ -24,11 +24,11 @@ const SignInForm = () => {
     if (!error) {
       return redirect('./confirmation');
     } else  if (password != password_two ){
-      return redirect('/login?message=passwords do not match')
+      return redirect('/Account?message=passwords do not match')
     } else {
-      return redirect('/login?message=Could not authenticate user')
+      return redirect('/Account?message=Could not authenticate user')
     }
-    
+
     return redirect('./confirmation')
 
 }
