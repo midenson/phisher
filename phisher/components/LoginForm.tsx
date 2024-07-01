@@ -48,7 +48,7 @@ const signin = async (formData: FormData) => {
             <label className="text-sm" htmlFor="password">
             <p className='text-sm'>Password</p>
             </label>
-            <Link href={'./'} className='text-sm font-light absolute top-8 left-56 text-blue-400'>Forgot Password</Link>
+            {/* <Link href={'./'} className='text-sm font-light absolute top-8 left-56 text-blue-400'>Forgot Password</Link> */}
             <input
             className="rounded-none px-4 py-2 bg-inherit border mb-6"
             type="password"
