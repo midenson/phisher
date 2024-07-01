@@ -34,11 +34,10 @@ const signin = async () => {
 
 
   return (
-    <form className="flex flex-col w-full justify-center" onSubmit={signin}>
+    <form className="flex flex-col w-full justify-center relative" onSubmit={signin}>
             <label className="text-sm" htmlFor="email">
             <p className='text-sm'>Email</p>
             </label>
-            <Link href={'./'} className='text-sm font-light'>Forgot Password</Link>
             <input
             className="rounded-none px-4 py-2 bg-inherit border mb-6"
             name="email"
@@ -48,6 +47,7 @@ const signin = async () => {
             <label className="text-sm" htmlFor="password">
             <p className='text-sm'>Password</p>
             </label>
+            <Link href={'./'} className='text-sm font-light absolute top-8 left-56 text-blue-400'>Forgot Password</Link>
             <input
             className="rounded-none px-4 py-2 bg-inherit border mb-6"
             type="password"
