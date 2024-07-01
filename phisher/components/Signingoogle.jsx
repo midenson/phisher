@@ -21,7 +21,7 @@ import React from "react";
 //   }
 // }
 
-const Signingoogle = ({ btnText, icon }) => {
+const Signingoogle = ({ btnText, icon, provider }) => {
   const signupwithoauth = async () => {
     const supabase_url = 'https://dkabkqkvvoiykaouhrvc.supabase.co';
     const supabase_anon = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRrYWJrcWt2dm9peWthb3VocnZjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTg4OTg4MzMsImV4cCI6MjAzNDQ3NDgzM30.Zm5SUO2H4NYHbwi4XksMwWtJq7KO8YpiXFHaHj-89Mg';
@@ -31,7 +31,7 @@ const Signingoogle = ({ btnText, icon }) => {
     );
   
     const { error } = await supabase.auth.signInWithOAuth({
-      provider: 'facebook'
+      provider: provider
     });
     if (!error) {
       redirect('./')
