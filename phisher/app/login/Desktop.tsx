@@ -32,6 +32,11 @@ const Signin = () => {
       <div className='flex justify-center items-center mt-5'>
           <Link href={'./create'} className='text-blue-500'>Need an account? Sign up</Link>
         </div>
+        {/* {searchParams?.message && (
+          <p className="mt-4 p-4 bg-foreground/10 text-foreground text-center">
+            {searchParams.message}
+          </p>
+        )} */}
       <Footer />
     </div>
   )

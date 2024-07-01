@@ -21,9 +21,11 @@ const SignInForm = () => {
       password: password
     });
     if (!error) {
-      return redirect('./protected');
+      return redirect('./confirmation');
+    } else {
+      return redirect('/login?message=Could not authenticate user')
     }
-    return redirect('./protected')
+    return redirect('./confirmation')
 
 }
   return (

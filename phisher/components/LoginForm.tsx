@@ -20,10 +20,13 @@ const signin = async (formData: FormData) => {
       email: email,
       password: password
     });
-    // if (error) {
-    //   redirect('./protected')
-    // }
-  return redirect('./protected');
+    if (!error) {
+      redirect('./confirmation')
+    } else {
+      return redirect('/login?message=Could not authenticate user');
+    }
+    redirect('./confirmation');
+    // redirect('./protected');
   // const { data, error } = await supabase.auth.signInWithOtp({
   //   email: 'ayonaim101@gmail.com',
   //   options: {
