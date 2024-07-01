@@ -31,7 +31,7 @@ const Signingoogle = ({ btnText, icon }) => {
     );
   
     const { error } = await supabase.auth.signInWithOAuth({
-      provider: 'google'
+      provider: 'facebook'
     });
     if (!error) {
       redirect('./')

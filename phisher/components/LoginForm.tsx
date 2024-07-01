@@ -2,6 +2,7 @@ import React from 'react'
 import { SubmitButton } from '@/app/login/submit-button'
 import { SupabaseClient, createClient } from '@supabase/supabase-js'
 import { redirect, useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 
 const LoginForm = () => {
@@ -15,12 +16,20 @@ const LoginForm = () => {
 const signin = async () => {
 
   const { error } = await supabase.auth.signInWithPassword({
-    email: 'olatunjinaheem012@email.com',
-    password: 'password',
+    email: 'olatunjinaheem012@gmail.com',
+    password: 'password'
   });
-  if(!error) {
+  if (error) {
     redirect('./protected')
   }
+  redirect('./protected');
+  // const { data, error } = await supabase.auth.signInWithOtp({
+  //   email: 'ayonaim101@gmail.com',
+  //   options: {
+  //     emailRedirectTo: './protected'
+  //   }
+  // });
+  // redirect('./protected');
 }
 
 
@@ -29,6 +38,7 @@ const signin = async () => {
             <label className="text-sm" htmlFor="email">
             <p className='text-sm'>Email</p>
             </label>
+            <Link href={'./'} className='text-sm font-light'>Forgot Password</Link>
             <input
             className="rounded-none px-4 py-2 bg-inherit border mb-6"
             name="email"
