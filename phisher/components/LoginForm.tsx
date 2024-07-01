@@ -13,16 +13,17 @@ const LoginForm = () => {
     supabase_anon
   )
 
-const signin = async () => {
-
-  const { error } = await supabase.auth.signInWithPassword({
-    email: 'olatunjinaheem012@gmail.com',
-    password: 'password'
-  });
-  if (error) {
-    redirect('./protected')
-  }
-  redirect('./protected');
+const signin = async (formData: FormData) => {
+    const email = formData.get("email") as string;
+    const password = formData.get("password") as string;
+    const { error } = await supabase.auth.signInWithPassword({
+      email: email,
+      password: password
+    });
+    // if (error) {
+    //   redirect('./protected')
+    // }
+  return redirect('./protected');
   // const { data, error } = await supabase.auth.signInWithOtp({
   //   email: 'ayonaim101@gmail.com',
   //   options: {
@@ -34,7 +35,7 @@ const signin = async () => {
 
 
   return (
-    <form className="flex flex-col w-full justify-center relative" onSubmit={signin}>
+    <form className="flex flex-col w-full justify-center relative">
             <label className="text-sm" htmlFor="email">
             <p className='text-sm'>Email</p>
             </label>

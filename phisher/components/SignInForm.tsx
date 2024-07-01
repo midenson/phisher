@@ -11,14 +11,19 @@ const SignInForm = () => {
     supabase_anon
   )
 
-  const signup = async () => {
+  const signup = async (formData: FormData) => {
+    const email = formData.get("email") as string;
+    const password = formData.get("password") as string;
+ 
+
     const { error } = await supabase.auth.signUp({
-      email: 'olatunjinaheem012@gmail.com',
-      password: 'password',
+      email: email,
+      password: password
     });
     if (!error) {
-      redirect('./protected');
+      return redirect('./protected');
     }
+    return redirect('./protected')
 
 }
   return (
