@@ -26,9 +26,9 @@ const MobileComponent = () => {
           <div className=' bg-gray-300 w-full h-10 flex justify-center items-center mt-3 border-t border-b'>OR</div>
           <div className='w-10/12 h-10/12 flex justify-center items-center'>
             <div className='flex flex-col justify-between gap-3 w-full mt-5'>
-              <Signingoogle btnText={'Sign in with google'} icon={'google'} />
-              <Signingoogle btnText={'Sign in with facebook'} icon={'meta'} />
-              <Signingoogle btnText={'Sign in with Apple'} icon={'apple'} />
+              <Signingoogle btnText={'Sign in with google'} icon={'google'} provider={'google'}/>
+              <Signingoogle btnText={'Sign in with facebook'} icon={'meta'} provider={'facebook'}/>
+              <Signingoogle btnText={'Sign in with Apple'} icon={'apple'} provider={'apple'}/>
             </div>
           </div>
         </div>
