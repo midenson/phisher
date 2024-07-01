@@ -13,9 +13,9 @@ const CreateForm = () => {
             <div className=' bg-gray-300 w-full h-10 flex justify-center items-center mt-3 border-t border-b'>OR</div>
             <div className='flex justify-center items-center w-10/12 h-2/3'>
             <div className='w-11/12 h-9/12 flex justify-between gap-3 items-center flex-col'>
-                <Signingoogle btnText={'Sign in with google'} icon={'google'} />
-                <Signingoogle btnText={'Sign in with facebook'} icon={'facebook'} />
-                <Signingoogle btnText={'Sign in with Apple'} icon={'apple'} />
+                <Signingoogle btnText={'Sign in with google'} icon={'google'} provider={'google'} />
+                <Signingoogle btnText={'Sign in with facebook'} icon={'facebook'} provider={'facebook'} />
+                <Signingoogle btnText={'Sign in with Apple'} icon={'apple'} provider={'apple'}/>
             </div>
             </div>
         </div>
