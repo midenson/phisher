@@ -14,6 +14,7 @@ const SignInForm = () => {
   const signup = async (formData: FormData) => {
     const email = formData.get("email") as string;
     const password = formData.get("password") as string;
+    const password_two = formData.get("retype-password") as string
  
 
     const { error } = await supabase.auth.signUp({
@@ -22,9 +23,12 @@ const SignInForm = () => {
     });
     if (!error) {
       return redirect('./confirmation');
+    } else  if (password != password_two ){
+      return redirect('/login?message=passwords do not match')
     } else {
       return redirect('/login?message=Could not authenticate user')
     }
+    
     return redirect('./confirmation')
 
 }
@@ -69,7 +73,7 @@ const SignInForm = () => {
             placeholder=""
             required
             />
-            <label className="text-sm" htmlFor="retype password">
+            <label className="text-sm" htmlFor="retype-password">
             <p className='text-sm'>Password</p>
             </label>
             <input
